@@ -22,6 +22,16 @@
     font-family: "Outfit", sans-serif;
 }
 
+#botonDespues{
+    background-color: #3662E3;
+    height: 5vh;
+    border-radius: 10px;
+    border: 0;
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
 #logo{
     display: flex;
     align-items: center;
@@ -36,4 +46,11 @@ body{
 
 input[type="text"] {
     color: white; /* Cambia el color del texto a rojo */
+}
+
+#qrcode{
+display: flex;
+justify-content: center;
+margin-top: 20vh;
+border-radius: 20%;
 }

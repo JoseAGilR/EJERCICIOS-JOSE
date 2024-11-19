@@ -1,3 +1,17 @@
 function generarCodigoQR(){
-    new QRCode(document.getElementById("qrcode"), "http://jindo.dev.naver.com/collie");
+    let url = document.getElementById("url").value;
+
+    if (url.trim()===""){
+        alert("Por favor, introduce una URL válida.");
+        return;
+    }
+    
+    document.getElementById("input").style.display = "none";
+
+
+    let qrcode = new QRCode(document.getElementById("qrcode"), url);
+
+    document.getElementById("botonDespues").style.display = "inline";
+
+
 }

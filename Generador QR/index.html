@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-        </style>
+    </style>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <meta charset="UTF-8">
@@ -11,17 +12,29 @@
     <title>Generador de QRs
     </title>
 </head>
+
 <body>
     <div id="logo">
-    <img src="imgs/logo-qr-generator.svg" alt="logo-qr-generator">
+        <a href="index.html">
+            <img src="imgs/logo-qr-generator.svg" alt="logo-qr-generator">
     </div>
+    </a>
     <div id="input">
-    <input type="text" id="url" placeholder="      Ingresa una URL">
-    <input type="submit" value="Generar QR" onclick="generarCodigoQR()" id="boton">
+        <input required type="text" id="url" placeholder="      Ingresa una URL">
+        <button type="submit" value="Generar QR" onclick="generarCodigoQR()" id="boton">Generar QR</button>
     </div>
     <div id="qrcode"></div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js" integrity="sha512-is1ls2rgwpFZyixqKFEExPHVUUL+pPkBEPw47s/6NDQ4n1m6T/ySeDW3p54jp45z2EJ0RSOgilqee1WhtelXfA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <div id="botonDespues">
+        <button>Download</button>
+        <button>Share</button>
+    </div>
+    <script>document.getElementById("botonDespues").style.display = "none"</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+        integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js"
+        integrity="sha512-is1ls2rgwpFZyixqKFEExPHVUUL+pPkBEPw47s/6NDQ4n1m6T/ySeDW3p54jp45z2EJ0RSOgilqee1WhtelXfA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
+
 </html>
