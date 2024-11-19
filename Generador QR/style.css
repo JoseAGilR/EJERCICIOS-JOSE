@@ -1,0 +1,39 @@
+#input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+#url{
+    width: 70vh;
+    height: 5vh;
+    background-color: #2d3e6f;
+    border-radius: 10px;
+    border: 0;
+    font-family: "Outfit", sans-serif;
+}
+
+#boton{
+    background-color: #3662E3;
+    height: 5vh;
+    border-radius: 10px;
+    border: 0;
+    font-family: "Outfit", sans-serif;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    background-color: #111729;
+    background-image: url(imgs/bg-illustration.svg);
+    background-repeat: no-repeat;
+}
+
+input[type="text"] {
+    color: white; /* Cambia el color del texto a rojo */
+}

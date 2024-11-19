@@ -1,0 +1,22 @@
+<!-- Permite al usuario rellenar un formulario para crear un objeto persona y 
+luego mostrar su información en la página. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <form action="index.html">
+        <input type="text" placeholder="Nombre" id="nombre">
+        <input type="text" placeholder="Apellidos" id="apellidos">
+        <input type="number" placeholder="Edad" id="edad">
+        <input type="text" placeholder="Ciudad de nacimiento" id="ciudadNacimiento">
+        <input type="text" placeholder="Ciudad de residencia" id="ciudadResidencia">
+        <input type="button" value="Enviar" onclick="mostrarDatos()">
+    </form>
+    <p id="mostrarDatos"></p>
+    <script src="script.js"></script>
+</body>
+</html>
