@@ -11,7 +11,7 @@ function generarCodigoQR(){
 
     let qrcode = new QRCode(document.getElementById("qrcode"), url);
 
-    document.getElementById("botonDespues").style.display = "inline";
+    document.getElementById("contenedorBotonDespues").style.display = "inline";
 
 
 }

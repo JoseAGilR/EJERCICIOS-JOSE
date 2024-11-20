@@ -1,10 +1,32 @@
-#input{
+#contenedorLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: chartreuse;
+}
+
+#contenedorInputs{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 50vh;
+    background-color: chartreuse;
 }
 
+#contenedorBotonDespues{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: chartreuse;
+}
+
+#contenedorQRcode{
+    display: flex;
+    justify-content: center;
+    margin-top: 20vh;
+    border-radius: 20%;
+    }
+    
 #url{
     width: 70vh;
     height: 5vh;
@@ -22,21 +44,18 @@
     font-family: "Outfit", sans-serif;
 }
 
-#botonDespues{
+
+
+#estiloBotonDespues{
     background-color: #3662E3;
     height: 5vh;
     border-radius: 10px;
     border: 0;
     font-family: "Outfit", sans-serif;
-    display: flex;
-    justify-content: center;
+    margin-top: 5vh;
 }
 
-#logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 body{
     background-color: #111729;
@@ -48,9 +67,3 @@ input[type="text"] {
     color: white; /* Cambia el color del texto a rojo */
 }
 
-#qrcode{
-display: flex;
-justify-content: center;
-margin-top: 20vh;
-border-radius: 20%;
-}

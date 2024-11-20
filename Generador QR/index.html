@@ -14,21 +14,21 @@
 </head>
 
 <body>
-    <div id="logo">
+    <div id="contenedorLogo">
         <a href="index.html">
             <img src="imgs/logo-qr-generator.svg" alt="logo-qr-generator">
     </div>
     </a>
-    <div id="input">
+    <div id="contenedorInputs">
         <input required type="text" id="url" placeholder="      Ingresa una URL">
         <button type="submit" value="Generar QR" onclick="generarCodigoQR()" id="boton">Generar QR</button>
     </div>
-    <div id="qrcode"></div>
-    <div id="botonDespues">
-        <button>Download</button>
-        <button>Share</button>
+    <div id="contenedorQRcode"></div>
+    <div id="contenedorBotonDespues">
+        <button id="estiloBotonDespues">Download</button>
+        <button id="estiloBotonDespues">Share</button>
     </div>
-    <script>document.getElementById("botonDespues").style.display = "none"</script>
+    <script>document.getElementById("contenedorBotonDespues").style.display = "none"</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
         integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
