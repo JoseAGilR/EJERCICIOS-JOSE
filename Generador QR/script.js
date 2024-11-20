@@ -6,12 +6,12 @@ function generarCodigoQR(){
         return;
     }
     
-    document.getElementById("input").style.display = "none";
+    document.getElementById("contenedorInputs").style.display = "none";
 
 
-    let qrcode = new QRCode(document.getElementById("qrcode"), url);
+    let qrcode = new QRCode(document.getElementById("contenedorQRcode"), url);
 
-    document.getElementById("contenedorBotonDespues").style.display = "inline";
+    document.getElementById("contenedorBotonDespues").style.display = "flex";
 
 
 }

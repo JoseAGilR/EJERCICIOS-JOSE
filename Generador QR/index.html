@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
     </style>
@@ -17,16 +18,17 @@
     <div id="contenedorLogo">
         <a href="index.html">
             <img src="imgs/logo-qr-generator.svg" alt="logo-qr-generator">
+        </a>
     </div>
-    </a>
+    
     <div id="contenedorInputs">
         <input required type="text" id="url" placeholder="      Ingresa una URL">
         <button type="submit" value="Generar QR" onclick="generarCodigoQR()" id="boton">Generar QR</button>
     </div>
     <div id="contenedorQRcode"></div>
     <div id="contenedorBotonDespues">
-        <button id="estiloBotonDespues">Download</button>
-        <button id="estiloBotonDespues">Share</button>
+        <button id="estiloBotonDespues"><i class="fa-solid fa-download"></i>Download</button>
+        <button id="estiloBotonDespues"><i class="fa-solid fa-share-nodes"></i>Share</button>
     </div>
     <script>document.getElementById("contenedorBotonDespues").style.display = "none"</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"

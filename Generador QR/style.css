@@ -1,33 +1,29 @@
-#contenedorLogo{
+#contenedorLogo {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: chartreuse;
 }
 
-#contenedorInputs{
+#contenedorInputs {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50vh;
-    background-color: chartreuse;
+    height: 100vh;
 }
 
-#contenedorBotonDespues{
+#contenedorBotonDespues {
     display: flex;
     justify-content: center;
-    width: 100%;
-    background-color: chartreuse;
 }
 
-#contenedorQRcode{
+#contenedorQRcode {
     display: flex;
     justify-content: center;
     margin-top: 20vh;
     border-radius: 20%;
-    }
-    
-#url{
+}
+
+#url {
     width: 70vh;
     height: 5vh;
     background-color: #2d3e6f;
@@ -36,7 +32,7 @@
     font-family: "Outfit", sans-serif;
 }
 
-#boton{
+#boton {
     background-color: #3662E3;
     height: 5vh;
     border-radius: 10px;
@@ -44,26 +40,29 @@
     font-family: "Outfit", sans-serif;
 }
 
-
-
-#estiloBotonDespues{
+#estiloBotonDespues {
     background-color: #3662E3;
     height: 5vh;
     border-radius: 10px;
     border: 0;
     font-family: "Outfit", sans-serif;
     margin-top: 5vh;
+    margin: 10px;
+    font-size: large;
 }
 
-
-
-body{
-    background-color: #111729;
+html,body {
+    overflow: hidden;
+    background-color: #211e44;
     background-image: url(imgs/bg-illustration.svg);
     background-repeat: no-repeat;
 }
 
 input[type="text"] {
-    color: white; /* Cambia el color del texto a rojo */
+    color: white;
+    /* Cambia el color del texto a rojo */
 }
 
+.fa-solid{
+    padding: 8px;
+}
