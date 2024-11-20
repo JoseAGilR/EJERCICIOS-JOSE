@@ -66,3 +66,11 @@ input[type="text"] {
 .fa-solid{
     padding: 8px;
 }
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: inherit;
+}

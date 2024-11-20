@@ -12,6 +12,4 @@ function generarCodigoQR(){
     let qrcode = new QRCode(document.getElementById("contenedorQRcode"), url);
 
     document.getElementById("contenedorBotonDespues").style.display = "flex";
-
-
 }
